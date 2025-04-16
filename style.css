@@ -60,7 +60,7 @@ header {
   padding: 150px 0 80px;
   background: 
     linear-gradient(105deg, rgba(248, 250, 255, 0.95) 50%, rgba(248, 250, 255, 0.7) 100%),
-    url('../assets/hero-bg.jpg') no-repeat center/cover;
+    url('../hero-bg.jpg') no-repeat center/cover;
   color: #111827;
   text-align: center;
 }
