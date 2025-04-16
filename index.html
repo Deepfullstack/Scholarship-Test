@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Civil Services Scholarship Test | MGICS Indore</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <img src="assets/logo.png" alt="MGICS Logo" class="logo">
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="animated delay-1">Take Your First <span>Step</span> in the Right Direction!</h1>
+      <p class="subtitle animated delay-1">Join India's most trusted Civil Services program with integrated graduation and <b>MPPSC & UPSC</b> preparation.</p>
+      
+      <div class="highlight-box animated delay-2">
+        <h2>Admission Cum Scholarship Test</h2>
+        <p>For 3-Year <strong>UNDERGRADUATE (UG) BATCH</strong></p>
+        <p class="scholarship">Up to <span>50% Scholarship</span> on Tuition Fees!</p>
+        <p class="deadline">Offer Valid for the First 100 Students Only!</p>
+      </div>
+
+      <div class="event-details animated delay-2">
+        <h2><i class="fas fa-calendar-alt"></i> <strong>27th April 2025 (Sunday)</strong></h2>
+        <p><i class="fas fa-clock"></i> <strong>10:00 AM</strong></p>
+        <p><i class="fas fa-map-marker-alt"></i> <strong>MGICS, Indrapuri Colony, Bhawarkuan, Indore</strong></p>
+      </div>
+      <br>
+      <a href="#register" class="cta-button large animated delay-3">Book Your Seat <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="benefits">
+    <div class="container">
+      <h2>Why Choose Us?</h2>
+      <div class="grid">
+        <div class="card animated delay-1">
+          <i class="fas fa-trophy"></i>
+          <h3>750+ Selections</h3>
+          <p>In the last 7 years</p>
+        </div>
+        <div class="card animated delay-2">
+          <i class="fas fa-graduation-cap"></i>
+          <h3>Integrated Program</h3>
+          <p>Graduation + Civil Services Prep</p>
+        </div>
+        <div class="card animated delay-3">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>Expert Faculty</h3>
+          <p>Experienced mentors & toppers</p>
+        </div>
+        <div class="card animated delay-4">
+          <i class="fas fa-language"></i>
+          <h3>Dual Medium</h3>
+          <p>English & Hindi batches</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form -->
+  <section id="register" class="registration">
+    <div class="container">
+      <h2>Register Now</h2>
+      <form id="registrationForm">
+        <div class="form-group">
+          <input type="text" id="fullName" placeholder="Full Name" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="mobile" placeholder="Mobile Number" pattern="\d{10}" maxlength="10" required>
+          <small class="error-message" id="mobile-error"></small>
+        </div>
+        <div class="form-group">
+          <input type="date" id="dob" required>
+          <small class="error-message" id="dob-error"></small>
+        </div>
+        <div class="form-group">
+          <select id="medium" required>
+            <option value="" disabled selected>Select Medium</option>
+            <option value="English">English</option>
+            <option value="Hindi">Hindi</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <input type="text" id="pincode" placeholder="Pincode" required>
+        </div>
+        <div class="form-group">
+          <input type="text" id="city" placeholder="City" required>
+        </div>
+        <div class="form-group">
+          <select id="currentClass" required>
+            <option value="" disabled selected>Current Class</option>
+            <option value="12th">12th Passed</option>
+            <option value="1st Year">1st Year</option>
+            <option value="2nd Year">2nd Year</option>
+            <option value="3rd Year">3rd Year</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <select id="careerGoal" required>
+            <option value="" disabled selected>Preferred Career Goal</option>
+            <option value="IAS">IAS</option>
+            <option value="IPS">IPS</option>
+            <option value="DSP">DSP</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="submit-button">Submit Application</button>
+      </form>
+    </section>
+
+  <!-- Success Message Modal -->
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-body">
+        <i class="fas fa-check-circle success-icon"></i>
+        <h2>✅ Application submitted successfully!</h2>
+        <p>Your scholarship test is on <strong>27th April, 10:00 AM</strong> at MGICS, Indrapuri Colony, Bhawarkuan, Indore.</p>
+        <p>Thank you for registering! If you have any doubts, call us at <strong>7000925055</strong> or visit our office.</p>
+        <p>Please bring a valid ID on the test day. We look forward to seeing you!</p>
+        <button id="closeModalBtn" class="action-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <h3>Contact Us</h3>
+      <p><i class="fas fa-phone"></i> 7000925055 | 86025 70511 | 82694 62589</p>
+      <p><i class="fas fa-map-marker-alt"></i> Plot No. 02A, Indrapuri Colony, Near Tantya Bheel Square, Bhawarkuan, Indore</p>
+      <p class="copyright">© 2025 Mahatma Gandhi Institute For Civil Services. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
