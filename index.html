@@ -8,13 +8,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <!-- Header -->
   <header>
     <div class="container">
-      <img src="logo.png" alt="MGICS Logo" class="logo">
+      <img src="assets/logo.png" alt="MGICS Logo" class="logo">
     </div>
   </header>
 
@@ -37,7 +37,7 @@
         <p><i class="fas fa-map-marker-alt"></i> <strong>MGICS, Indrapuri Colony, Bhawarkuan, Indore</strong></p>
       </div>
       <br>
-      <a href="#register" class="cta-button large animated delay-3">Book Your Seat <i class="fas fa-arrow-right"></i></a>
+      <a href="#register" class="cta-button large animated delay-3">Register Now <i class="fas fa-arrow-right"></i></a>
     </div>
   </section>
 
@@ -70,57 +70,15 @@
     </div>
   </section>
 
-  <!-- Registration Form -->
+  <!-- Registration Form (Google Form) -->
   <section id="register" class="registration">
     <div class="container">
       <h2>Register Now</h2>
-      <form id="registrationForm">
-        <div class="form-group">
-          <input type="text" id="fullName" placeholder="Full Name" required>
-        </div>
-        <div class="form-group">
-          <input type="tel" id="mobile" placeholder="Mobile Number" pattern="\d{10}" maxlength="10" required>
-          <small class="error-message" id="mobile-error"></small>
-        </div>
-        <div class="form-group">
-          <input type="date" id="dob" required>
-          <small class="error-message" id="dob-error"></small>
-        </div>
-        <div class="form-group">
-          <select id="medium" required>
-            <option value="" disabled selected>Select Medium</option>
-            <option value="English">English</option>
-            <option value="Hindi">Hindi</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <input type="text" id="pincode" placeholder="Pincode" required>
-        </div>
-        <div class="form-group">
-          <input type="text" id="city" placeholder="City" required>
-        </div>
-        <div class="form-group">
-          <select id="currentClass" required>
-            <option value="" disabled selected>Current Class</option>
-            <option value="12th">12th Passed</option>
-            <option value="1st Year">1st Year</option>
-            <option value="2nd Year">2nd Year</option>
-            <option value="3rd Year">3rd Year</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <select id="careerGoal" required>
-            <option value="" disabled selected>Preferred Career Goal</option>
-            <option value="IAS">IAS</option>
-            <option value="IPS">IPS</option>
-            <option value="DSP">DSP</option>
-            <option value="Other">Other</option>
-          </select>
-        </div>
-        <button type="submit" class="submit-button">Submit Application</button>
-      </form>
+      <!-- Replace this iframe with the one you get from Google Forms -->
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeL6RI_7CsiH567lsPdxeSR94YsruUjc6e77c5UbMPSjkqXdA/viewform?embedded=true" width="600" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <!--<button id="showModalBtn" class="cta-button">Show Success Message</button>-->
     </section>
-
+   
   <!-- Success Message Modal -->
   <div id="successModal" class="modal">
     <div class="modal-content">
@@ -145,6 +103,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
